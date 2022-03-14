@@ -1,6 +1,6 @@
 {
   "name": "node-when",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "node-when is a zero-dep package to execute your callable functions!",
   "main": "index.js",
   "scripts": {
