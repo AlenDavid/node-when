@@ -6,6 +6,7 @@
   "scripts": {
     "build": "esbuild --bundle --outdir=dist/ index.js",
     "test": "tap",
+    "prepublish": "npm run build",
     "publish": "np patch"
   },
   "keywords": [
