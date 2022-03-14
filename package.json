@@ -1,7 +1,7 @@
 {
-  "name": "when.js",
+  "name": "node-when",
   "version": "0.0.1",
-  "description": "When.js is a zero-dep package to execute your callable functions!",
+  "description": "node-when is a zero-dep package to execute your callable functions!",
   "main": "index.js",
   "scripts": {
     "build": "esbuild --bundle --outdir=dist/ index.js",
