@@ -4,7 +4,8 @@
   "description": "When.js provides a zero-dependency package to execute your callable functions!",
   "main": "index.js",
   "scripts": {
-    "test": "tap"
+    "test": "tap",
+    "publish": "np patch"
   },
   "keywords": [
     "when"
