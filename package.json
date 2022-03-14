@@ -18,6 +18,7 @@
     "LICENSE",
     "README.md",
     "package.json",
-    "index.js"
+    "index.js",
+    "!.github/"
   ]
 }
