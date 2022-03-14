@@ -2,7 +2,6 @@ name: Publish to npm using np
 
 on:
   push:
-    # Sequence of patterns matched against refs/heads
     branches:    
       - main
 
@@ -19,4 +18,4 @@ jobs:
           node-version: '16'
 
       - name: Publish to npm
-        run: np patch
+        run: npx np patch
