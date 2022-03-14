@@ -3,9 +3,21 @@ const when = require("./index");
 
 tap.type(when, "function", "function is exported by index.js file");
 
-tap.todo("validates the truthiness of the first argument");
-tap.todo("accepts a callback function as the second argument");
-tap.todo("trigger the callback function when the first argument is truthy");
-tap.todo(
+function iAmCallback() {
+  return "i am callback";
+}
+
+tap.equal(
+  when(true, iAmCallback),
+  "i am callback",
+  "trigger the callback function when the first argument is truthy"
+);
+
+function IWillThrowError() {
+  throw new Error("i will throw error");
+}
+
+tap.doesNotThrow(
+  when(false, IWillThrowError),
   "don't trigger the callback function when the first argument is falsy"
 );
